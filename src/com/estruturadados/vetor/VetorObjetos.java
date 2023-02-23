@@ -58,7 +58,6 @@ public class VetorObjetos {
 
         this.elementos[posicao] = elemento;
         this.tamanho++;
-
         return false;
     }
 
