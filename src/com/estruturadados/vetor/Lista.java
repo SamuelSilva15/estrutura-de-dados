@@ -27,7 +27,7 @@ public class Lista<T> {
         return Arrays.toString(elementos);
     }
 
-    public Object busca(int posicao) {
+    public T busca(int posicao) {
         if(!(posicao >= 0 && posicao < tamanho)) {
             throw new IllegalArgumentException("Posição inválida");
         }
@@ -80,5 +80,43 @@ public class Lista<T> {
             this.elementos[i] = elementos[i+1];
         }
         this.tamanho--;
+    }
+
+    //exer 01
+    public boolean contem (T elemento) {
+        return  busca(elemento) >= 0;
+    }
+
+    //exer 02
+    public int lastIndexOf(T elemento) {
+        int lastIndex = -1;
+        for(int i = 0; i < this.tamanho; i++) {
+            if(this.elementos[i].equals(elemento)) {
+                lastIndex = i;
+            }
+        }
+
+        return lastIndex;
+    }
+
+    //exer 03
+    public void remove(T elemento) {
+        int pos = this.busca(elemento);
+        if(pos > -1) {
+            this.remove(pos);
+        }
+    }
+
+    //exer 04
+    public T obtem(int posicao) {
+        return this.busca(posicao);
+    }
+
+    //exer 05
+    public void limpar() {
+        for(int i = 0; i < this.tamanho; i++) {
+            this.elementos[i] = null;
+        }
+        this.tamanho = 0;
     }
 }
