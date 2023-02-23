@@ -3,6 +3,7 @@ package com.estruturadados.pilha.exerc;
 import java.util.Stack;
 
 public class Exer07 {
+
     /*
         Usando a classe Pilha ou Stack, desenvolva um algoritmo que faça de número decimais para binário
      */

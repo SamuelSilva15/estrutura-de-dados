@@ -58,7 +58,7 @@ public class EstruturaEstatica<T> {
     }
 
     @SuppressWarnings("unchecked")
-    private void aumentaCapacidade() {
+    protected void aumentaCapacidade() {
         if (this.tamanho == this.elementos.length) {
             T[] elementosNovos = (T[]) new Object[this.elementos.length * 2];
             for (int i=0; i<this.elementos.length; i++){
@@ -74,7 +74,6 @@ public class EstruturaEstatica<T> {
 
     @Override
     public String toString() {
-
         StringBuilder s = new StringBuilder();
         s.append("[");
 
