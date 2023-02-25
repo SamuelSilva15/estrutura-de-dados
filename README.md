@@ -35,7 +35,7 @@ Elas utilizam ponteiros para unir os elementos, e cada elemento “aponta” par
 Os programas utilizam a lista ligada para encadear os arquivos e “chamar” o próximo via setas do teclado ou botões de “anterior” e “próxima”.
 
 - Conjunto(HashSet): A estrutura de dados conjunto (ou set) é uma lista não ordenada de elementos únicos. Ou seja, não é possível repetir o valor de um elemento dentro de um conjunto.
-A técina de espalhamento consiste basicamente de duas partes: a função de espalhamento("Função de Hash") e a tabela de espalhamento("Tabela de hash"). Quando um gerar o m eesmo índice para elementos distintos dizemos que houve colisão.
-Na classe Object, definife um método para gerar o código de espalhamento, o HashCode(), o método equals também o utiliza. Um dos usos mais comuns desta estrutura é em bancos de dados SQL.
+A técina de espalhamento consiste basicamente de duas partes: a função de espalhamento("Função de Hash") e a tabela de espalhamento("Tabela de hash"). Quando um gerar o mesmo índice para elementos distintos dizemos que houve colisão.
+Na classe Object, define um método para gerar o código de espalhamento, o HashCode(), o método equals também o utiliza. Um dos usos mais comuns desta estrutura é em bancos de dados SQL.
 - Mapa(HashMap):  é uma estrutura que guarda dados em pares de chave e valor e utiliza estas chaves para encontrar os elementos associados a elas, diferentemente das estruturas que vimos até agora, que trabalham com listas (sequenciais ou não) apenas de valores.
 Há duas implementações que utilizam a técnica do espalhamento:  HashMap e HashTable.
