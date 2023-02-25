@@ -1,4 +1,4 @@
-# Estrutura dedados
+# Estrutura de dados
 Projeto feito para aprender e implementar estrutura de dados.
 
 # *Fontes que utilizarei:*
