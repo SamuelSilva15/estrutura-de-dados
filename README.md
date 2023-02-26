@@ -39,3 +39,10 @@ A técina de espalhamento consiste basicamente de duas partes: a função de esp
 Na classe Object, define um método para gerar o código de espalhamento, o HashCode(), o método equals também o utiliza. Um dos usos mais comuns desta estrutura é em bancos de dados SQL.
 - Mapa(HashMap):  é uma estrutura que guarda dados em pares de chave e valor e utiliza estas chaves para encontrar os elementos associados a elas, diferentemente das estruturas que vimos até agora, que trabalham com listas (sequenciais ou não) apenas de valores.
 Há duas implementações que utilizam a técnica do espalhamento:  HashMap e HashTable.
+
+# *Considerações:*
+- Adicionar um elemento na primeira posição de um vetor, consome muito tempo. A medida que a quantidade elementos cresce, o vetor consome tempo linear em relação ao número de elementos, o que o torna lento.
+
+- A lista ligadas possue uma desvantagem em relação aos Vetores. Vetores possuem o chamado *acesso aleatório* aos: elementos: qualquer posição pode ser acessada em tempo constante.
+
+- Pilha e filas tem operações mais restritas do que as operações das Listas. Por exemplo, você pode adicionar ou remover um elemento em qualquer posição de uma Lista mas em uma Pilha você só pode adicionar ou remover do topo. Já nas filas, os elementos são adicionadas na última posição e removidos da primeira posição.
